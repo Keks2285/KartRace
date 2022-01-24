@@ -51,8 +51,7 @@ namespace Kartrace
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             connect.Open();
-            using (connect)
-            {
+          
                 SqlCommand c = new SqlCommand($@"select ID_Role from [User] where Email='{Email.Text}' and Password='{PasswordText.Password}'", connect);
                 SqlDataReader reader = c.ExecuteReader();
                 if (reader.HasRows) // если есть данные
@@ -65,6 +64,7 @@ namespace Kartrace
                         t.Abort();
                         this.Hide();
                         w.Show();
+                        return;
                     }
                     if (reader["ID_Role"].ToString().Equals("A"))
                     {
@@ -73,9 +73,11 @@ namespace Kartrace
                         t.Abort();
                         this.Hide();
                         w.Show();
+                        return;
                     }
                 }
-            }
+            
+            connect.Close();
         }
 
         void Remain()
