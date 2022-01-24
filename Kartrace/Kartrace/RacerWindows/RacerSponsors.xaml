@@ -1,0 +1,40 @@
+﻿<Window x:Class="Kartrace.RacerWindows.RacerSponsors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kartrace.RacerWindows"
+        mc:Ignorable="d"
+        Title="RacerSponsors" Height="500" Width="800" x:Name="Win">
+    <Grid x:Name="G" >
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="26*"></RowDefinition>
+            <RowDefinition Height="72*" ></RowDefinition>
+            <RowDefinition Height="15*" ></RowDefinition>
+            <RowDefinition Height="163*"/>
+            <RowDefinition Height="133*" ></RowDefinition>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="50*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"  ></ColumnDefinition>
+
+            <ColumnDefinition Width="228*"  ></ColumnDefinition>
+            <ColumnDefinition Width="119*"  ></ColumnDefinition>
+            <ColumnDefinition Width="250*"  ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="До начала события осталось" Background="Gray" VerticalContentAlignment="Bottom" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Bottom" Height="37"  Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}" Margin="-4,0"/>
+        <Label Grid.Column="0" Content="Kart Skills 2017" Background="Gray" FontWeight="Bold" VerticalContentAlignment="Top" FontSize="25" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center" VerticalAlignment="Top"   Grid.ColumnSpan="4" Width="793"  Grid.Row="1"  Height="75" Margin="-1,0,0,0" Grid.RowSpan="2" />
+        <Label Content="Москва, Россия 20 Июня 2017" FontWeight="Medium" FontSize="15" Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="{Binding ElementName=Win, Path=Width}"  Height="30" Margin="-2,45,-6,0" Grid.RowSpan="2"/>
+        <WrapPanel Grid.Row="0" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <Image Source="/Pictures/Flag.ico" />
+        </WrapPanel>
+        <Label Content="Мои Спонсоры" Grid.Column="1" FontSize="20" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Top" Height="37"  Width="400" Margin="1,0,196,0" />
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,0" Width="75" Height="20" Grid.RowSpan="2"/>
+        <Label Content="Пол Возрастная категория" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="123,54,68,0" Height="26" Width="156" />
+        <Label Content="Описание БО" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top"  Width="175" Height="123" Margin="10,0" />
+        <Image HorizontalAlignment="Center" Height="100" Grid.Column="0" Grid.Row="3" VerticalAlignment="Bottom" Width="100" Margin="-14,0,109,0" />
+        <Label Content="Название" HorizontalAlignment="Center"  Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Width="175" Margin="10,19,10,0"/>
+    </Grid>
+</Window>

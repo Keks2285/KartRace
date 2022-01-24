@@ -1,0 +1,60 @@
+﻿<Window x:Class="Kartrace.Sponsor.SponsRacer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kartrace.Sponsor"
+        mc:Ignorable="d"
+        Title="SponsRacer" Height="600" Width="800" x:Name="Win">
+    <Grid x:Name="G" >
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="38*"></RowDefinition>
+            <RowDefinition Height="79*" ></RowDefinition>
+            <RowDefinition Height="6*" ></RowDefinition>
+            <RowDefinition Height="112*"/>
+            <RowDefinition Height="104*" ></RowDefinition>
+            <RowDefinition Height="99*" ></RowDefinition>
+            <RowDefinition Height="131*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"  ></ColumnDefinition>
+
+            <ColumnDefinition Width="228*"  ></ColumnDefinition>
+            <ColumnDefinition Width="119*"  ></ColumnDefinition>
+            <ColumnDefinition Width="250*"  ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="До начала события осталось" Background="Gray" VerticalContentAlignment="Bottom" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Bottom" Height="37"  Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}" Margin="-4,0"/>
+        <Label Grid.Column="0" Content="Kart Skills 2017" Background="Gray" FontWeight="Bold" VerticalContentAlignment="Top" FontSize="25" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center" VerticalAlignment="Top"   Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}"  Grid.Row="1"  Height="75" Margin="-1,0,-7,0" />
+        <Label Content="Москва, Россия 20 Июня 2017" FontWeight="Medium" FontSize="15" Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="{Binding ElementName=Win, Path=Width}"  Height="30" Margin="-2,45,-6,0"/>
+        <WrapPanel Grid.Row="0" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="4">
+            <Image Source="/Pictures/Flag.ico" />
+        </WrapPanel>
+
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" />
+        <Label Content="Спонсировать гонщика" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="290" Grid.RowSpan="2" Margin="27,0,30,0"/>
+        <Button Content="Заплатить" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="34" x:Name="Login" />
+        <Button Content="Отмена" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="34" x:Name="Chanel"  />
+        <Label Content="Гонщик" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Center" Height="26" Width="59" Margin="0,39" />
+        <Label Content="Ваше имя" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Top" Height="25" Width="69" />
+
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" Width="178" Height="22" Margin="0,41" />
+        <Label Content="Номер карты" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Top" Height="26"  Width="86" Margin="0,5,0,0"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Карта" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Bottom" Height="25" Width="48"  />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Bottom" Width="178" />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178" Margin="0,5,0,0" />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39" Margin="0,38"  />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="79" Margin="44,38,0,38"  />
+        <Label Content="Срок действия" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="92" Margin="0,35,0,38"  />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39"  Margin="0,76,0,0"  />
+        <Label Content="CVC" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="39" Margin="0,73,0,0"  />
+        <Label Content="Благотворительность" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="38"  Width="209" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="3"/>
+        <Label Content="" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Height="38"  Width="210" FontSize="15" HorizontalContentAlignment="Center" Grid.Column="3" />
+        <Label Content="Сумма пожертвования" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Bottom" Height="30"  Width="230" FontSize="15" HorizontalContentAlignment="Center" Grid.Column="3" Margin="10,0" />
+        <Label Content="$" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Top" Height="99"  Width="230" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="3"  />
+        <Button Content="+" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Top" Width="37"  Height="28" x:Name="Здгы50"  />
+        <Button Content="-" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="40"  Height="28" x:Name="Minus50"  />
+        <TextBox Grid.Column="3" HorizontalAlignment="Center" Height="23"  Grid.Row="6" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="163" Margin="45,5,42,0"  />
+    </Grid>
+</Window>
