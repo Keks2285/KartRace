@@ -23,5 +23,19 @@ namespace Kartrace.RacerWindows
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {//yes
+            Window w = new Authorization();
+            w.Show();
+            this.Hide();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {//no
+            Window w = new RacerRegistration();
+            w.Show();
+            this.Hide();
+        }
     }
 }

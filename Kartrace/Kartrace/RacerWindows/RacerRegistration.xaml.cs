@@ -33,7 +33,9 @@ namespace Kartrace.RacerWindows
         string fullfilenamae = "";
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-
+            Window w = new MainWindow();
+            this.Hide();
+            w.Show();
         }
 
         private void Look_Click(object sender, RoutedEventArgs e)
@@ -109,7 +111,7 @@ namespace Kartrace.RacerWindows
 
         private void Chanel_Click(object sender, RoutedEventArgs e)
         {
-            Window w = new RacerMenu();
+            Window w = new MainWindow();
             this.Hide();
             w.Show();
         }

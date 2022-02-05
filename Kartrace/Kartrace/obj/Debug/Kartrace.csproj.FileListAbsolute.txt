@@ -50,7 +50,6 @@ D:\Проги\Kartrace\Kartrace\obj\Debug\Sponsor\ThanksSponsor.baml
 D:\GitHub\KartRace\Kartrace\Kartrace\bin\Debug\Kartrace.exe.config
 D:\GitHub\KartRace\Kartrace\Kartrace\bin\Debug\Kartrace.exe
 D:\GitHub\KartRace\Kartrace\Kartrace\bin\Debug\Kartrace.pdb
-D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csprojAssemblyReference.cache
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\AdminMenu.g.cs
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Authorization.g.cs
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Coordinator\CoordinatorMenu.g.cs
@@ -96,3 +95,4 @@ D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.GenerateResource.
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.CoreCompileInputs.cache
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.exe
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.pdb
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.AssemblyReference.cache

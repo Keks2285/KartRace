@@ -73,7 +73,7 @@ namespace Kartrace
         private void Racer_Click(object sender, RoutedEventArgs e)
         {
             connect.Close();
-            Window w = new RacerWindows.RacerRegistration();
+            Window w = new RacerWindows.RacerEnter();
             t.Abort();
             this.Hide();
             w.Show();

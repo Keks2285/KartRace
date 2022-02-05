@@ -60,7 +60,7 @@ namespace Kartrace
                     if (reader["ID_Role"].ToString().Equals("R"))
                     {
                         connect.Close();
-                        Window w = new RacerWindows.RacerEnter();
+                        Window w = new RacerWindows.RacerMenu();
                         t.Abort();
                         this.Hide();
                         w.Show();
@@ -75,7 +75,16 @@ namespace Kartrace
                         w.Show();
                         return;
                     }
+                if (reader["ID_Role"].ToString().Equals("C"))
+                {
+                    connect.Close();
+                    Window w = new Administrator.AdminMenu();
+                    t.Abort();
+                    this.Hide();
+                    w.Show();
+                    return;
                 }
+            }
             
             connect.Close();
         }

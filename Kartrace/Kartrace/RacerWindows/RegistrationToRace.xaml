@@ -5,51 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kartrace.RacerWindows"
         mc:Ignorable="d"
-        Title="RegistrationToRace" Height="600" Width="800" Name="Win">
+        Title="RegistrationToRace" Height="600" Width="800" Name="Win" Loaded="Win_Loaded">
     <Grid x:Name="G" >
-            <Grid.RowDefinitions>
-                <RowDefinition  Height="38*"></RowDefinition>
-                <RowDefinition Height="79*" ></RowDefinition>
-                <RowDefinition Height="6*" ></RowDefinition>
-                <RowDefinition Height="112*"/>
-                <RowDefinition Height="104*" ></RowDefinition>
-                <RowDefinition Height="31*" ></RowDefinition>
-                <RowDefinition Height="199*"></RowDefinition>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="38*"></RowDefinition>
+            <RowDefinition Height="79*" ></RowDefinition>
+            <RowDefinition Height="6*" ></RowDefinition>
+            <RowDefinition Height="112*"/>
+            <RowDefinition Height="104*" ></RowDefinition>
+            <RowDefinition Height="31*" ></RowDefinition>
+            <RowDefinition Height="199*"></RowDefinition>
 
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition  ></ColumnDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  ></ColumnDefinition>
 
-                <ColumnDefinition  ></ColumnDefinition>
-                <ColumnDefinition  ></ColumnDefinition>
-                <ColumnDefinition  ></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Label Content="До начала события осталось" Background="Gray" VerticalContentAlignment="Bottom" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Bottom" Height="37"  Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}" Margin="-4,0"/>
-            <Label Grid.Column="0" Content="Kart Skills 2017" Background="Gray" FontWeight="Bold" VerticalContentAlignment="Top" FontSize="25" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center" VerticalAlignment="Top"   Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}"  Grid.Row="1"  Height="75" Margin="-1,0,-7,0" />
-            <Label Content="Москва, Россия 20 Июня 2017" FontWeight="Medium" FontSize="15" Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="{Binding ElementName=Win, Path=Width}"  Height="30" Margin="-2,45,-6,0"/>
-            <WrapPanel Grid.Row="0" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="4">
-                <Image Source="/Pictures/Flag.ico" />
-            </WrapPanel>
+            <ColumnDefinition  ></ColumnDefinition>
+            <ColumnDefinition  ></ColumnDefinition>
+            <ColumnDefinition  ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="До начала события осталось" Background="Gray" VerticalContentAlignment="Bottom" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Bottom" Height="37"  Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}" Margin="-4,0"/>
+        <Label Grid.Column="0" Content="Kart Skills 2017" Background="Gray" FontWeight="Bold" VerticalContentAlignment="Top" FontSize="25" HorizontalContentAlignment="Center" FontFamily="Open Sans Light"  HorizontalAlignment="Center" VerticalAlignment="Top"   Grid.ColumnSpan="4" Width="{Binding ElementName=Win, Path=Width}"  Grid.Row="1"  Height="75" Margin="-1,0,-7,0" />
+        <Label Content="Москва, Россия 20 Июня 2017" FontWeight="Medium" FontSize="15" Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="{Binding ElementName=Win, Path=Width}"  Height="30" Margin="-2,45,-6,0"/>
+        <WrapPanel Grid.Row="0" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="4">
+            <Image Source="/Pictures/Flag.ico" />
+        </WrapPanel>
 
-            <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" />
-            <Label Content="Регистрация  на гонку" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="290" Grid.RowSpan="2" Margin="53,0"/>
-            <Button Content="Сохранить" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="35" x:Name="Login" />
-            <Button Content="Отмена" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="35" x:Name="Chanel" />
-            <Label Content="Организация" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="83" Margin="105,0,0,0"/>
-            <Label Content="Не понятно что" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="97" Margin="91,30,0,0"/>
-
-            <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="178" Height="22"/>
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" />
+        <Label Content="Регистрация  на гонку" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="290" Grid.RowSpan="2" Margin="53,0"/>
+        <Button Content="Регистрация" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="35" x:Name="Login" Click="Login_Click" />
+        <Button Content="Отмена" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="35" x:Name="Chanel" />
+        <Label Content="Организация" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="83" Margin="105,0,0,0"/>
+        <Label Content="Пожертвование в организацию" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="188" Margin="0,30,0,0"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="178" Height="22" Name="Organization"/>
         <Label Content="Варианты комплектов" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Bottom" Height="32" Width="154" Margin="22,0"  />
-        <CheckBox Content="Заезд 2,5 км ($25)" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Width="120" Height="15"/>
-            <CheckBox Content="Заезд 4 км ($40)" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center"  Width="120" Height="16" Margin="0,40,0,48"/>
-            <CheckBox Content="Заезд 6,5 км ($65)" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Bottom" Width="120" Height="15"/>
-            <RadioButton GroupName="Variant" Content="Вариант А ($0) Номер пилота+ &#xD;&#xA;браслет"  Grid.Column="3" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Width="198" Height="36"/>
-            <RadioButton GroupName="Variant"  Content="Вариант B ($30) Номер пилота+ &#xD;&#xA;Шлем + Браслет" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" Margin="0,38,0,32" Width="188" Height="34"/>
-            <RadioButton GroupName="Variant" Content="Вариант B ($50) Номер пилота+ &#xD;&#xA;Экипировка+ Браслет" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Bottom" Width="188" Height="29"/>
-            <Label Content="Детали спонсорства" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Bottom" Height="26" Margin="38,0" Width="122"/>
-            <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178"/>
-            <Label Content="Регистрационный взнос" Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="148" />
-            <Label Content="$" HorizontalContentAlignment="Center" FontSize="25" VerticalContentAlignment="Center" Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Center" Height="82" Width="154"  />
-            <Button Content="LogOut" Grid.Column="3"  HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="LogOut"  />
-        </Grid>
+        <CheckBox Content="Заезд 2,5 км ($25)" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Top" Width="120" Height="15" Margin="0,0,78,0" Name="ChBox25" Checked="ChBox25_Checked" Unchecked="ChBox25_Unchecked"/>
+        <CheckBox Content="Заезд 4 км ($40)" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center"  Width="120" Height="16" Margin="0,40,0,48" Name="ChBox40" Checked="ChBox40_Checked" Unchecked="ChBox40_Unchecked"/>
+        <CheckBox Content="Заезд 6,5 км ($65)" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Bottom" Width="120" Height="15" Name="ChBox65" Checked="ChBox65_Checked" Unchecked="ChBox65_Unchecked"/>
+        <RadioButton x:Name="RB0" GroupName="Variant" Content="Вариант А ($0) Номер пилота+ &#xD;&#xA;браслет"  Grid.Column="3" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Width="198" Height="36" />
+        <RadioButton x:Name="RB30"  GroupName="Variant"  Content="Вариант B ($30) Номер пилота+ &#xD;&#xA;Шлем + Браслет" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" Margin="0,38,0,32" Width="188" Height="34" Checked="RadioButton_Checked_1" Unchecked="RadioButton_Unchecked_1"/>
+        <RadioButton x:Name="RB50"  GroupName="Variant" Content="Вариант B ($50) Номер пилота+ &#xD;&#xA;Экипировка+ Браслет" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Bottom" Width="188" Height="29" Checked="RadioButton_Checked_2" Unchecked="RadioButton_Unchecked_2"/>
+        <Label Content="Детали спонсорства" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Bottom" Height="26" Margin="38,0" Width="122"/>
+        <TextBox x:Name="Donate" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Регистрационный взнос" Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="148" />
+        <Label Content="0$" HorizontalContentAlignment="Center" FontSize="25" VerticalContentAlignment="Center" Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="6" VerticalAlignment="Center" Height="82" Width="154"  x:Name="Price"/>
+        <Button Content="LogOut" Grid.Column="3"  HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="LogOut"  />
+    </Grid>
 </Window>

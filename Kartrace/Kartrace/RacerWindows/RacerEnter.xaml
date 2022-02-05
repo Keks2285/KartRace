@@ -28,8 +28,8 @@
         <WrapPanel Grid.Row="0" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.RowSpan="2">
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
-        <Button Content="Да" Grid.Column="1" FontSize="20"  HorizontalAlignment="Center" Margin="96,53,10,66" Grid.Row="3" VerticalAlignment="Center" Height="32" Width="92" />
-        <Button Content="Нет" Grid.Column="2" FontSize="20"  HorizontalAlignment="Center" Margin="10,53,105,66" Grid.Row="3" VerticalAlignment="Center" Height="32" Width="83" />
+        <Button Content="Да" Grid.Column="1" FontSize="20"  HorizontalAlignment="Center" Margin="96,53,10,66" Grid.Row="3" VerticalAlignment="Center" Height="32" Width="92" Click="Button_Click" />
+        <Button Content="Нет" Grid.Column="2" FontSize="20"  HorizontalAlignment="Center" Margin="10,53,105,66" Grid.Row="3" VerticalAlignment="Center" Height="32" Width="83" Click="Button_Click_1" />
         <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="0,5,0,0" Width="75" Height="20"/>
         <Label Content="Учавствовали ранее?" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Bottom" Height="37" Margin="96,0" Width="204"/>
         <Label Content="Москва, Россия 20 Июня 2017" FontWeight="Medium" FontSize="15" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"  VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="250" Height="30" Margin="73,0"/>
