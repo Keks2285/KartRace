@@ -23,5 +23,12 @@ namespace Kartrace.Info
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new KartSkillsInfo();
+            Hide();
+            window.Show();
+        }
     }
 }

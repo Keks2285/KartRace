@@ -116,5 +116,13 @@ namespace Kartrace
             window.Show();
             t.Abort();
         }
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Info.InfoMenu();
+            Hide();
+            window.Show();
+            t.Abort();
+        }
     }
 }

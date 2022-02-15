@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kartrace.Info"
         mc:Ignorable="d"
-        Title="KartSkillsInfo" Height="450" Width="800" x:Name="Win">
+        Title="KartSkillsInfo" Height="450" Width="800" x:Name="Win" MinWidth="800" MinHeight="450">
     <Grid x:Name="G" >
         <Grid.RowDefinitions>
             <RowDefinition  Height="23*"></RowDefinition>
@@ -31,10 +31,16 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
         <Label Content="Подробная информация" Grid.Column="1" FontSize="20" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Top" Height="37"  Width="400" Margin="1,10,196,0"/>
-        <Button  HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="161"  Height="101" x:Name="Back" Margin="24,0,10,10">
-            <Image/>
+        <Button x:Name="Map" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="175"  Height="116"  Margin="10,0,10,10" Click="Map_Click">
+            <Image Source="/Pictures/map1.png" Stretch="Fill"/>
         </Button>
-        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,0" Width="75" Height="20" Grid.RowSpan="2"/>
-        <Label Content="Label" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" Height="194" Grid.RowSpan="3" Width="239" Grid.ColumnSpan="2" Margin="64,52,66,25"/>
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,0" Width="75" Height="20" Grid.RowSpan="2" Click="Button_Click"/>
+        <Label Content="О Kart Skills 2017 &#10; Kart Skills - гоночный фестиваль, проводимый каждый год &#10; в разных частях мира. Может быть три зачета:2.5 километра, 4 километра и 6.5 километров
+              &#10; В прошлых годах гоночный фестиваль был проведен в &#10; Рио-де-Жанейро, Бразилия (2014);  Лейпциг, Германия (2013); Каир, Египет (2012) и Париж, &#10; Франция (2011). В этом году, Kart Skills очень зрелищен, продет в  Москве, Россия, он должен быть &#10; самым большим гоночным фестивалем. Это столица России и самый большой город. Гонщики &#10; будут проезжать мимо стен Кремля, великолепных архитектур. Этот фестиваль привлек рекордное &#10; количество гонщиков со всего мира.  
+особое внимание будет обращено на участников из &#10; Германии и Канады (Немец закончил гонку за 20 минут 4 секунды). Атмосфера праздника &#10; обещает развлечения для всех зрителей.
+События: - Программа 4 километра начнется у Московской &#10; Государственная Думы  в 6 утра.   - Программа 6 километров начнется в 7 утра у стен Кремля.&#10;- Программа 2.5 километра  начнется в 15 часов рядом с Центральным парком культуры и отдыха &#10; имени Горького. Спасибо всем волонтерам, которые будут помогать нам проводить фестиваль!
+               " 
+               
+               Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" Height="231" Grid.RowSpan="3" Width="577" Grid.ColumnSpan="3" Margin="10,40,10,0"/>
     </Grid>
 </Window>

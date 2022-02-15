@@ -27,7 +27,7 @@
         <Button  x:Name="Sponsor" HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Row="1" Grid.Column="1" Margin="35,40,35,42" BorderThickness="2" Height="140" Width="128" Click="Sponsor_Click"  >
             <Image Source="/Pictures/Dengi.png" Stretch="Fill"/>
         </Button>
-        <Button  x:Name="Info" HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Row="1" Grid.Column="2" Margin="35,40,35,42" BorderThickness="2" Height="140" Width="128" >
+        <Button  x:Name="Info" HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Row="1" Grid.Column="2" Margin="35,40,35,42" BorderThickness="2" Height="140" Width="128" Click="Info_Click" >
             <Image Source="/Pictures/Informatsia.png" Stretch="Fill"/>
         </Button>
         <Button  x:Name="Enter" HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Row="1" Grid.Column="3" Margin="35,40,35,42" BorderThickness="2" Height="140" Width="128" Click="Enter_Click">

@@ -96,3 +96,5 @@ D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.CoreCompileInputs
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.exe
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.pdb
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.AssemblyReference.cache
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Info\CharityList.g.cs
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Info\CharityList.baml

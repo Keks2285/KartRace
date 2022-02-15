@@ -23,5 +23,19 @@ namespace Kartrace.Info
         {
             InitializeComponent();
         }
+
+        private void Map_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Map();
+            Hide();
+            window.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new InfoMenu();
+            Hide();
+            window.Show();
+        }
     }
 }

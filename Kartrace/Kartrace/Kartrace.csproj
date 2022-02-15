@@ -64,6 +64,9 @@
     <Compile Include="Coordinator\CoordinatorMenu.xaml.cs">
       <DependentUpon>CoordinatorMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Info\CharityList.xaml.cs">
+      <DependentUpon>CharityList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Info\InfoMenu.xaml.cs">
       <DependentUpon>InfoMenu.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Coordinator\CoordinatorMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Info\CharityList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -231,6 +238,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RacersImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\map1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

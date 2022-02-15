@@ -24,6 +24,18 @@ namespace Kartrace.Info
             InitializeComponent();
         }
 
-     
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new KartSkillsInfo();
+            Hide();
+            window.Show();            
+        }
+
+        private void Back_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new CharityList();
+            Hide();
+            window.Show();
+        }
     }
 }

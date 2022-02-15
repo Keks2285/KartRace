@@ -31,9 +31,9 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
         <Label Content="Подробная информация" Grid.Column="1" FontSize="20" Grid.ColumnSpan="3" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Top" Height="37"  Width="400" Margin="1,10,196,0"/>
-        <Button Content="Kart Skills 2017" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="161"  Height="55" x:Name="Back"  Grid.ColumnSpan="2" Margin="131,0"/>
+        <Button Content="Kart Skills 2017" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="161"  Height="55" x:Name="Back"  Grid.ColumnSpan="2" Margin="131,0" Click="Back_Click"/>
         <Button Content="Предыдущте результаты" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Width="161"  Height="55" x:Name="Back_Copy1"  Grid.ColumnSpan="2" Margin="131,10,131,0" />
-        <Button Content="Список благотворительных&#xA;           организаций" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="163"  Height="55" x:Name="Back_Copy2" Margin="32,0,174,1" Grid.Column="2" RenderTransformOrigin="0.542,0.34" Grid.ColumnSpan="2" />
+        <Button Content="Список благотворительных&#xA;           организаций" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Width="163"  Height="55" x:Name="Back_Copy2" Margin="32,0,174,1" Grid.Column="2" RenderTransformOrigin="0.542,0.34" Grid.ColumnSpan="2" Click="Back_Copy2_Click" />
         <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,20,0,0" Width="75" Height="20" Grid.RowSpan="2"/>
     </Grid>
 </Window>
