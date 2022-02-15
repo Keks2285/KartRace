@@ -19,9 +19,19 @@ namespace Kartrace.Sponsor
     /// </summary>
     public partial class ThanksSponsor : Window
     {
-        public ThanksSponsor()
+        public ThanksSponsor(string FIO, string FOND, string COST)
         {
             InitializeComponent();
+            fio.Content = FIO;
+            fond.Content = FOND;
+            cost.Content = COST;
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new MainWindow();
+            Hide();
+            w.Show();
         }
     }
 }

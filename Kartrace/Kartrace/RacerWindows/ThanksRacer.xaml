@@ -31,7 +31,7 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
         <Label Content="Спасибо зарегистрацию в качестве гонщика" Grid.Column="0" FontSize="20" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="434" Grid.RowSpan="2" />
-        <Button Content="Ок" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Center" Width="92"  Height="34" x:Name="Back"/>
+        <Button Content="Ок" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Center" Width="92"  Height="34" x:Name="Back" Click="Back_Click"/>
         <Label Content="С вами свяжутся насчет оплаты" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="37"  Width="320" Margin="26,0,1,0" />
         <Button Content="LogOut" Grid.Column="3"  HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="LogOut"  />
     </Grid>

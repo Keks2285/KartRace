@@ -60,7 +60,7 @@ namespace Kartrace
                     if (reader["ID_Role"].ToString().Equals("R"))
                     {
                         connect.Close();
-                        Window w = new RacerWindows.RacerMenu();
+                        Window w = new RacerWindows.RacerMenu(Email.Text, PasswordText.Password);
                         t.Abort();
                         this.Hide();
                         w.Show();
@@ -97,7 +97,7 @@ namespace Kartrace
                 {
                     Dispatcher.Invoke(() =>
                     {
-                        DateTime otherDate = new DateTime(2022, 05, 22);
+                        DateTime otherDate = new DateTime(2022, 08, 22);
                         TimeSpan remaining = otherDate - DateTime.Now;
                         int months = (int)(remaining.TotalDays / 30);
                         int years = months / 12;

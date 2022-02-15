@@ -31,10 +31,10 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
 
-        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" />
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" Click="Back_Click" />
         <Label Content="Регистрация  на гонку" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="290" Grid.RowSpan="2" Margin="53,0"/>
         <Button Content="Регистрация" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="35" x:Name="Login" Click="Login_Click" />
-        <Button Content="Отмена" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="35" x:Name="Chanel" />
+        <Button Content="Отмена" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="35" x:Name="Chanel" Click="Chanel_Click" />
         <Label Content="Организация" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="83" Margin="105,0,0,0"/>
         <Label Content="Пожертвование в организацию" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Height="25" Width="188" Margin="0,30,0,0"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="178" Height="22" Name="Organization"/>

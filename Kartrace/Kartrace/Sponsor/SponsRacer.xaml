@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kartrace.Sponsor"
         mc:Ignorable="d"
-        Title="SponsRacer" Height="600" Width="800" x:Name="Win">
+        Title="SponsRacer" Height="600" Width="800" x:Name="Win" Loaded="Win_Loaded">
     <Grid x:Name="G" >
         <Grid.RowDefinitions>
             <RowDefinition  Height="38*"></RowDefinition>
@@ -13,8 +13,8 @@
             <RowDefinition Height="6*" ></RowDefinition>
             <RowDefinition Height="112*"/>
             <RowDefinition Height="104*" ></RowDefinition>
-            <RowDefinition Height="99*" ></RowDefinition>
-            <RowDefinition Height="131*"></RowDefinition>
+            <RowDefinition Height="110*" ></RowDefinition>
+            <RowDefinition Height="120*"></RowDefinition>
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -31,30 +31,30 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
 
-        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" />
+        <Button Content="Назад" Grid.Column="0"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"  Width="75" Height="20" x:Name="Back" Click="Back_Click" />
         <Label Content="Спонсировать гонщика" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="290" Grid.RowSpan="2" Margin="27,0,30,0"/>
-        <Button Content="Заплатить" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="34" x:Name="Login" />
-        <Button Content="Отмена" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="34" x:Name="Chanel"  />
+        <Button x:Name="Pay" Content="Заплатить" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Center" Width="82"   Height="34" Click="Pay_Click" Margin="0,43"  />
+        <Button Content="Отмена" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Center" Width="92"  Height="34" x:Name="Chanel" Click="Chanel_Click" Margin="0,43"  />
         <Label Content="Гонщик" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Center" Height="26" Width="59" Margin="0,39" />
         <Label Content="Ваше имя" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Top" Height="25" Width="69" />
 
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" Width="178" Height="22" Margin="0,41" />
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" Width="178" Height="22" Margin="0,41" x:Name="Racer" SelectionChanged="Racer_SelectionChanged"/>
         <Label Content="Номер карты" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Top" Height="26"  Width="86" Margin="0,5,0,0"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="YourName" MaxLength="30" Grid.Column="1" HorizontalAlignment="Left" Height="34"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178"/>
         <Label Content="Карта" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Bottom" Height="25" Width="48"  />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Bottom" Width="178" />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="178" Margin="0,5,0,0" />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39" Margin="0,38"  />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="79" Margin="44,38,0,38"  />
-        <Label Content="Срок действия" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="92" Margin="0,35,0,38"  />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39"  Margin="0,76,0,0"  />
-        <Label Content="CVC" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="39" Margin="0,73,0,0"  />
-        <Label Content="Благотворительность" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="38"  Width="209" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="3"/>
-        <Label Content="" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Height="38"  Width="210" FontSize="15" HorizontalContentAlignment="Center" Grid.Column="3" />
+        <TextBox x:Name="Owner" MaxLength="20" Grid.Column="1" HorizontalAlignment="Left" Height="30"  Grid.Row="4" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Bottom" Width="178" />
+        <TextBox MaxLength="16" Grid.Column="1" HorizontalAlignment="Left" Height="31"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" x:Name="NumberCard" Width="178" Margin="0,5,0,0" />
+        <TextBox x:Name="Month" MaxLength="2" Grid.Column="1" HorizontalAlignment="Left" Height="30"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39" Margin="0,43,0,37"  />
+        <TextBox x:Name="Year" MaxLength="4" Grid.Column="1" HorizontalAlignment="Left" Height="30"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="80" Margin="44,43,0,37"  />
+        <Label Content="Срок действия" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="92" Margin="0,41,0,43"  />
+        <TextBox x:Name="CVC" MaxLength="3" Grid.Column="1" HorizontalAlignment="Left" Height="31"  Grid.Row="5" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" Width="39"  Margin="0,79,0,0"  />
+        <Label Content="CVC" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Center" Height="26"  Width="39" Margin="0,79,0,5"  />
+        <Label Content="Благотворительность" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="38"  Width="210" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="3" Margin="20,0"/>
+        <Label Content="" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Height="38"  Width="210" FontSize="15" HorizontalContentAlignment="Center" Grid.Column="3" Margin="20,0" x:Name="NameCharity"/>
         <Label Content="Сумма пожертвования" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Bottom" Height="30"  Width="230" FontSize="15" HorizontalContentAlignment="Center" Grid.Column="3" Margin="10,0" />
-        <Label Content="$" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Top" Height="99"  Width="230" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="3"  />
-        <Button Content="+" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Top" Width="37"  Height="28" x:Name="Здгы50"  />
-        <Button Content="-" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="40"  Height="28" x:Name="Minus50"  />
-        <TextBox Grid.Column="3" HorizontalAlignment="Center" Height="23"  Grid.Row="6" TextWrapping="Wrap" Text="" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="163" Margin="45,5,42,0"  />
+        <Label x:Name="TotalSumma" Content="$" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Top" Height="99"  Width="230" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="3" Margin="10,0"  />
+        <Button Content="+" Grid.Column="3" HorizontalAlignment="Right"  Grid.Row="6" VerticalAlignment="Top" Width="37"  Height="28" x:Name="Plus50" Click="Plus50_Click"  />
+        <Button   Content="-" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="6" VerticalAlignment="Top" Width="40"  Height="28" x:Name="Minus50" Click="Minus50_Click"  />
+        <TextBox  MaxLength="6" x:Name="Ammount" Grid.Column="3" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="23"  Grid.Row="6" TextWrapping="Wrap" Text="50" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" Width="163" Margin="45,5,42,0" TextChanged="Ammount_TextChanged"  />
     </Grid>
 </Window>

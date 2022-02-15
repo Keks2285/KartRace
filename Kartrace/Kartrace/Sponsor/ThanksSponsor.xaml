@@ -31,9 +31,9 @@
             <Image Source="/Pictures/Flag.ico" />
         </WrapPanel>
         <Label Content="Спасибо за спонсорскую поддержку!" Grid.Column="0" FontSize="20" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Top" Height="37"  Width="400" Grid.RowSpan="2" Margin="194,0,198,0"/>
-        <Button Content="Назад" Grid.ColumnSpan="4" Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Bottom" Width="92"  Height="34" x:Name="Back"/>
-        <Label Content="Имя Фамилия" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="37"  Width="290" Margin="56,0,1,0" />
-        <Label Content="Фонд" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Height="37"  Width="290" Margin="56,0,1,0"  />
-        <Label Content="$" Grid.Column="0" FontSize="20" Grid.ColumnSpan="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Bottom" Height="94"  Width="291"    />
+        <Button Content="Назад" Grid.ColumnSpan="4" Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="5" VerticalAlignment="Bottom" Width="92"  Height="34" x:Name="Back" Click="Back_Click"/>
+        <Label x:Name="fio" Content="Имя Фамилия" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Bottom" Height="37"  Width="290" Margin="56,0,1,0" />
+        <Label x:Name="fond" Content="Фонд" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Top" Height="37"  Width="290" Margin="56,0,1,0"  />
+        <Label x:Name="cost" Content="$" Grid.Column="0" FontSize="20" Grid.ColumnSpan="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Bottom" Height="94"  Width="291"    />
     </Grid>
 </Window>

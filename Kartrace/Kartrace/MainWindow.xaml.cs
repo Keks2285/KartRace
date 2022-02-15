@@ -75,7 +75,7 @@ namespace Kartrace
             connect.Close();
             Window w = new RacerWindows.RacerEnter();
             t.Abort();
-            this.Hide();
+            Hide();
             w.Show();
         }
         void Remain()
@@ -86,7 +86,7 @@ namespace Kartrace
                 {
                     Dispatcher.Invoke(() =>
                         {
-                            DateTime otherDate = new DateTime(2022, 05, 22);
+                            DateTime otherDate = new DateTime(2022, 08, 22);
                             TimeSpan remaining = otherDate-DateTime.Now  ;
                             int months = (int)(remaining.TotalDays / 30);
                             int years = months / 12;
@@ -104,6 +104,14 @@ namespace Kartrace
         {
            // Authorization window = new Authorization();
               Window window = new Authorization();
+            this.Hide();
+            window.Show();
+            t.Abort();
+        }
+
+        private void Sponsor_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Sponsor.SponsRacer();
             this.Hide();
             window.Show();
             t.Abort();

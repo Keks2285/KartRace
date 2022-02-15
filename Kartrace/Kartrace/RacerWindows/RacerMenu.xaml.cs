@@ -19,16 +19,34 @@ namespace Kartrace.RacerWindows
     /// </summary>
     public partial class RacerMenu : Window
     {
-        public RacerMenu()
+        string EMAIL;
+        string PASSWORD;
+        public RacerMenu(string login, string password)
         {
             InitializeComponent();
+            EMAIL = login;
+            PASSWORD = password;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Window w = new RegistrationToRace();
+            Window w = new RegistrationToRace(EMAIL,PASSWORD);
             this.Hide();
             w.Show();
+        }
+
+        private void Redact_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new RacerChangeData(EMAIL, PASSWORD);
+            this.Hide();
+            w.Show();
+        }
+
+        private void LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            this.Hide();
+            window.Show();
         }
     }
 }

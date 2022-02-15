@@ -19,9 +19,20 @@ namespace Kartrace.RacerWindows
     /// </summary>
     public partial class ThanksRacer : Window
     {
-        public ThanksRacer()
+        string EMAIL = "";
+        string PASSWORD = "";
+        public ThanksRacer(string email, string password)
         {
+            EMAIL = email;
+            PASSWORD = password;
             InitializeComponent();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new RacerMenu(EMAIL, PASSWORD);
+            this.Hide();
+            w.Show();
         }
     }
 }

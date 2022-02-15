@@ -55,7 +55,7 @@ namespace Kartrace.RacerWindows
         {
             connect.Open();
 
-            if (Email.Text != "" && Password.Text != "" && RepeatPassword.Text.Equals(Password.Text) && Gender.SelectedValue != null)
+            if (Email.Text != "" && Password.Text != "" && RepeatPassword.Text.Equals(Password.Text) && Gender.SelectedValue != null && Firsname.Text.Length>1 && LastName.Text.Length > 1 && Country.SelectedValue != null && PhotoFile!="" && DateBirth!=null)
             {
                 if (!TimeRemaining.Emailvalid(Email.Text))
                 {
@@ -80,7 +80,8 @@ namespace Kartrace.RacerWindows
                 add.ExecuteNonQuery();
                 add1.ExecuteNonQuery();
                     File.Copy(fullfilenamae, Directory.GetCurrentDirectory()+$@"\RacersImages\{PhotoFile}");
-                  }
+                    MessageBox.Show("Вы успешно зарегестрировались");
+                }
                   catch { MessageBox.Show("Ведены неправильные данные"); }
                 finally {
                 connect.Close();
@@ -105,7 +106,7 @@ namespace Kartrace.RacerWindows
             data.Load(command.ExecuteReader());
             Country.ItemsSource = data.DefaultView;
             Country.SelectedValuePath = "ID_Country";
-            Country.DisplayMemberPath = "Country_Name";
+            Country.DisplayMemberPath = "Country_Name";          
             connect.Close();
         }
 
