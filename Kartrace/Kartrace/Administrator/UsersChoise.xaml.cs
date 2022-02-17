@@ -15,18 +15,32 @@ using System.Windows.Shapes;
 namespace Kartrace.Administrator
 {
     /// <summary>
-    /// Логика взаимодействия для AdminMenu.xaml
+    /// Логика взаимодействия для UsersChoise.xaml
     /// </summary>
-    public partial class AdminMenu : Window
+    public partial class UsersChoise : Window
     {
-        public AdminMenu()
+        public UsersChoise()
         {
             InitializeComponent();
         }
 
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new AddUsers();
+            Hide();
+            w.Show();
+        }
+
+        private void Change_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new ChangeUsers();
+            Hide();
+            w.Show();
+        }
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Window w = new UsersChoise();
+            Window w = new AdminMenu();
             Hide();
             w.Show();
         }

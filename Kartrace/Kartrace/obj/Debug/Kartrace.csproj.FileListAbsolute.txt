@@ -98,3 +98,9 @@ D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.pdb
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Kartrace.csproj.AssemblyReference.cache
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Info\CharityList.g.cs
 D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Info\CharityList.baml
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\AddUsers.g.cs
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\ChangeUsers.g.cs
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\UsersChoise.g.cs
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\AddUsers.baml
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\ChangeUsers.baml
+D:\GitHub\KartRace\Kartrace\Kartrace\obj\Debug\Administrator\UsersChoise.baml
